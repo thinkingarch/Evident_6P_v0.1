@@ -144,7 +144,6 @@ const contentDB = {
             </div>
             <div class="assessment-item">
                 <label>Adaptability & Resilience</label>
-                    <textarea id="vision-statement" rows="5" placeholder="Describe the company's long-term vision...">To be the leading platform for trustworthy AI-driven insights, enabling smarter, more efficient, and equitable city governance globally.</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
 
@@ -155,7 +154,6 @@ const contentDB = {
             <h2><i class="fas fa-users-cog p-icon" style="color:var(--p-people-color);"></i>Leadership Principles</h2>
             <div class="assessment-item">
                 <label>Leadership Style & Effectiveness</label>
-                    <textarea id="vision-statement" rows="5" placeholder="Describe the company's long-term vision...">To be the leading platform for trustworthy AI-driven insights, enabling smarter, more efficient, and equitable city governance globally.</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
 
