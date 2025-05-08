@@ -24,7 +24,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* MODIFIED font-family */
+    font-family: 'Din Alternate', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     background-color: var(--border-margin-color);
     color: var(--dark-font);
