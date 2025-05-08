@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6P Horizon Strategist - Dashboard Focus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div id="app-wrapper">
+        <header class="main-header">
+            <div class="header-left">
+                 <img id="logo" src="logo.png" style="width:200px;height:87px" alt="Evident Logo"> </div>
+            <div class="header-search">
+                <input type="search" placeholder="Search across deals (e.g., Target Alpha), documents, insights...">
+            </div>
+            <div class="header-right">
+                <a href="#" class="nav-icon" aria-label="AI Assistant" title="AI Assistant"><i class="fas fa-wand-sparkles"></i></a>
+                <a href="#" class="nav-icon" aria-label="Alerts" title="Alerts">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </a>
+                <div class="user-profile" title="User Profile">
+                    <span class="avatar-placeholder">CP</span>
+                    <span>Carlo Purassanta</span>
+                </div>
+            </div>
+        </header>
+
+        <div id="app-container">
+            <section id="dashboard-page" class="page active-page">
+                 <div style="padding:1.5rem 2rem;">
+                    <div class="content-header">
+                    <div class="flex justify-center items-center">
+                    </div>
+                        <h1> Dashboard </h1>
+                        <div class="actions">
+                            <button class="btn btn-go-to-deal"><i class="fas fa-plus"></i> Initiate New Deal</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-layout">
+                        <div class="dashboard-main">
+                             <div class="dash-card">
+                                <h2>Active Deal Focus: Target Alpha Inc.</h2>
+                                <div class="deal-item">
+                                    <div>
+                                        <h3 style="font-size:1.2rem;">Target Alpha Inc. <span style="font-size:0.8rem; color: var(--light-font); font-weight:normal;">(SaaS Solutions)</span></h3>
+                                        <span class="status">Status: 6P Assessment In Progress</span>
+                                    </div>
+                                    <button class="btn btn-go-to-deal" onclick="loadDealLayout('Target Alpha Inc.')"><i class="fas fa-arrow-right"></i> Go to Deal Workspace</button>
+                                </div>
+                            </div>
+
+                            <section class="six-p-explanation-section">
+                                <h2>The 6P Due Diligence Framework (Target Alpha Inc. Assessment)</h2>
+                                <p>Click on a pillar below to view the detailed assessment for Target Alpha Inc.</p>
+                                <div class="six-p-explanation-grid">
+                                    <div class="p-explanation-card project" onclick="loadDealLayoutAndNavigateToP('Target Alpha Inc.', 'p-project-content')">
+                                        <div class="p-header">
+                                            <i class="fas fa-bullseye p-icon"></i>
+                                            <h3>Project (Core DNA)</h3>
+                                        </div>
+                                        <p>Assess Vision, Mission, Strategy clarity, and future-proofing against client needs. Evaluate innovation outlook.</p>
+                                        <div class="p-card-progress">
+                                            <div class="progress-bar-container-sm"><div class="progress-bar-sm" style="width: 40%;"></div></div>
+                                            <div class="progress-label">40% Complete</div>
+                                        </div>
+                                    </div>
+                                    <div class="p-explanation-card people" onclick="loadDealLayoutAndNavigateToP('Target Alpha Inc.', 'p-people-content')">
+                                        <div class="p-header">
+                                            <i class="fas fa-users p-icon"></i>
+                                            <h3>People (Social Architecture)</h3>
+                                        </div>
+                                        <p>Analyze growth culture, leadership principles, and talent development systems.</p>
+                                         <div class="p-card-progress">
+                                            <div class="progress-bar-container-sm"><div class="progress-bar-sm" style="width: 15%;"></div></div>
+                                            <div class="progress-label">15% Complete</div>
+                                        </div>
+                                    </div>
+                                    <div class="p-explanation-card product" onclick="loadDealLayoutAndNavigateToP('Target Alpha Inc.', 'p-product-content')">
+                                        <div class="p-header">
+                                            <i class="fas fa-cogs p-icon"></i>
+                                            <h3>Product (Innovation & IP)</h3>
+                                        </div>
+                                        <p>Audit technical foundation, development methodologies, and quality assurance processes.</p>
+                                         <div class="p-card-progress">
+                                            <div class="progress-bar-container-sm"><div class="progress-bar-sm" style="width: 0%;"></div></div>
+                                            <div class="progress-label">0% Complete</div>
+                                        </div>
+                                    </div>
+                                    <div class="p-explanation-card processes" onclick="loadDealLayoutAndNavigateToP('Target Alpha Inc.', 'p-processes-content')">
+                                        <div class="p-header">
+                                            <i class="fas fa-project-diagram p-icon"></i>
+                                            <h3>Processes (Dynamic Work Graph)</h3>
+                                        </div>
+                                        <p>Assess operational leanness, AI automation, resource allocation, and organizational learning capabilities.</p>
+                                         <div class="p-card-progress">
+                                            <div class="progress-bar-container-sm"><div class="progress-bar-sm" style="width: 5%;"></div></div>
+                                            <div class="progress-label">5% Complete</div>
+                                        </div>
+                                    </div>
+                                    <div class="p-explanation-card performance" onclick="loadDealLayoutAndNavigateToP('Target Alpha Inc.', 'p-performance-content')">
+                                        <div class="p-header">
+                                            <i class="fas fa-chart-line p-icon"></i>
+                                            <h3>Performance (Quest for Success)</h3>
+                                        </div>
+                                        <p>Examine KPI/OKR frameworks, financial discipline, AI-enabled execution, and ecosystem leverage.</p>
+                                         <div class="p-card-progress">
+                                            <div class="progress-bar-container-sm"><div class="progress-bar-sm" style="width: 10%;"></div></div>
+                                            <div class="progress-label">10% Complete</div>
+                                        </div>
+                                    </div>
+                                    <div class="p-explanation-card posture" onclick="loadDealLayoutAndNavigateToP('Target Alpha Inc.', 'p-posture-content')">
+                                        <div class="p-header">
+                                            <i class="fas fa-shield-alt p-icon"></i>
+                                            <h3>Posture (Mindful Self-Regulation)</h3>
+                                        </div>
+                                        <p>Evaluate compliance architecture, risk management, and audit/accountability processes.</p>
+                                        <div class="p-card-progress">
+                                            <div class="progress-bar-container-sm"><div class="progress-bar-sm" style="width: 0%;"></div></div>
+                                            <div class="progress-label">0% Complete</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="dashboard-sidebar">
+                             <div class="dash-card">
+                                <h2>Quick Stats</h2>
+                                <div class="quick-stats-grid">
+                                    <div class="quick-stat"><p>Active Deals</p><strong>1</strong></div>
+                                    <div class="quick-stat"><p>Pending Tasks</p><strong>12</strong></div>
+                                    <div class="quick-stat"><p>Alerts</p><strong class="text-danger">3</strong></div>
+                                    <div class="quick-stat"><p>AI Insights</p><strong class="text-success">7</strong></div>
+                                </div>
+                            </div>
+                            <div class="dash-card">
+                                <h2>My High Priority Tasks (Target Alpha Inc.)</h2>
+                                <ul style="list-style:none; padding:0; margin:0;">
+                                    <li style="font-size:0.9rem; margin-bottom:0.5rem;"><span class="text-danger"><i class="fas fa-flag"></i></span> Finalize 'Product IP' review (Due: May 09, 2025)</li>
+                                    <li style="font-size:0.9rem; margin-bottom:0.5rem;"><span class="text-warning"><i class="fas fa-flag"></i></span> Schedule Legal Review Call for IP (Due: May 16, 2025)</li>
+                                     <li style="font-size:0.9rem; margin-bottom:0.5rem;">Review Q1 Financials Uploaded by Target (Due: May 11, 2025)</li>
+                                </ul>
+                            </div>
+                             <div class="dash-card">
+                                <h2>Recent AI Insights (Target Alpha Inc.)</h2>
+                                <ul style="list-style:none; padding:0; margin:0; font-size:0.9rem;">
+                                    <li style="margin-bottom:0.5rem;"><i class="fas fa-lightbulb text-warning"></i> Risk flag: Customer concentration exceeds 30% for Client X. <a href="#">Details...</a></li>
+                                    <li style="margin-bottom:0.5rem;"><i class="fas fa-lightbulb text-success"></i> Opportunity: Cross-sell Service Y (from Acquirer) to Target Alpha's Client Z identified. <a href="#">Details...</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="main-app-layout" class="page">
+                <div class="main-app-area">
+                    <nav id="left-main-nav">
+                        <button onclick="navigateToSection('dashboard-page', true)"><i class="fas fa-arrow-left fa-fw"></i> Back to Dashboard</button>
+                        <div id="left-nav-deal-name" class="deal-name-indicator">Target Alpha Inc.</div>
+                        <h3>6P Assessment</h3>
+                        <button class="active" data-template="p-project-content" onclick="loadContent('p-project-content', this)"><i class="fas fa-bullseye fa-fw"></i> Project</button>
+                        <button data-template="p-people-content" onclick="loadContent('p-people-content', this)"><i class="fas fa-users fa-fw"></i> People</button>
+                        <button data-template="p-product-content" onclick="loadContent('p-product-content', this)"><i class="fas fa-cogs fa-fw"></i> Product</button>
+                        <button data-template="p-processes-content" onclick="loadContent('p-processes-content', this)"><i class="fas fa-project-diagram fa-fw"></i> Processes</button>
+                        <button data-template="p-performance-content" onclick="loadContent('p-performance-content', this)"><i class="fas fa-chart-line fa-fw"></i> Performance</button>
+                        <button data-template="p-posture-content" onclick="loadContent('p-posture-content', this)"><i class="fas fa-shield-alt fa-fw"></i> Posture</button>
+                        <h3>Integration & Value Creation</h3>
+                        <button data-template="roadmap-content" onclick="loadContent('roadmap-content', this)"><i class="fas fa-map-signs fa-fw"></i> Transformation Roadmap</button>
+                        <h3>Supporting Areas</h3>
+                        <button data-template="documents-content" onclick="loadContent('documents-content', this)"><i class="fas fa-folder-open fa-fw"></i> Documents</button>
+                        <button data-template="collaboration-content" onclick="loadContent('collaboration-content', this)"><i class="fas fa-comments fa-fw"></i> Collaboration</button>
+                        <button data-template="tasks-content" onclick="loadContent('tasks-content', this)"><i class="fas fa-tasks fa-fw"></i> Tasks</button>
+                        <button data-template="team-content" onclick="loadContent('team-content', this)"><i class="fas fa-user-friends fa-fw"></i> Team</button>
+                        <button data-template="reports-content" onclick="loadContent('reports-content', this)"><i class="fas fa-chart-pie fa-fw"></i> Reports</button>
+                    </nav>
+                    <main id="main-content-display">
+                         </main>
+                </div>
+            </section>
+        </div>
+
+        <footer class="main-footer-sticky">
+            © 2025 Horizon Strategists Inc.
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
