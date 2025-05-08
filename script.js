@@ -1,3 +1,11 @@
+let currentDealNameGlobal = 'Target Alpha Inc.';
+const mainAppLayout = document.getElementById('main-app-layout');
+const dashboardPage = document.getElementById('dashboard-page');
+const mainContentDisplay = document.getElementById('main-content-display');
+const leftNavDealName = document.getElementById('left-nav-deal-name');
+const appWrapper = document.getElementById('app-wrapper');
+
+
 // --- OPTIMIZATION: Content Database ---
 const contentDB = {
     'p-project-content': `
