@@ -5,7 +5,6 @@ const mainContentDisplay = document.getElementById('main-content-display');
 const leftNavDealName = document.getElementById('left-nav-deal-name');
 const appWrapper = document.getElementById('app-wrapper');
 
-
 // --- OPTIMIZATION: Content Database ---
 const contentDB = {
     'p-project-content': `
@@ -25,20 +24,20 @@ const contentDB = {
             <div class="assessment-item">
                 <label for="vision-statement">Company's Articulated Long-Term Vision</label>
                 <div class="input-area">
-                    <textarea id="vision-statement" rows="5" placeholder="Describe the company's long-term vision...">To be the leading platform for trustworthy AI-driven insights, enabling smarter, more efficient, and equitable city governance globally.</textarea>
+                    <textarea id="vision-statement" rows="5" placeholder="Describe the company's long-term vision...">To be the undisputed global leader in urban resilience software solutions, empowering cities and citizens with seamless, eco-friendly, and accessible services for a greener future.</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
                 <div class="ai-assist-panel">
                     <h4><i class="fas fa-lightbulb"></i> AI Insights & Suggestions</h4>
-                    <p><em>Document Scan ('Investor Pitch Deck Q1 2025', pg. 3):</em> "Our vision is to power the smart cities of tomorrow with ethical AI..." - <a href="#">View Source</a></p>
-                    <p><strong>Suggestion:</strong> Consider adding a specific target (e.g., "powering X% of major global cities by 2030").</p>
+                    <p><em>Document Scan ('Annual Report 2024', pg. 5):</em> "Our vision is to revolutionize urban transport..." - <a href="#">View Source</a></p>
+                    <p><strong>Suggestion:</strong> Add quantifiable aspects (e.g., "serving X million people").</p>
                     <button class="btn btn-ai btn-secondary btn-small">Apply Suggestion</button>
                 </div>
             </div>
              <div class="assessment-item">
                 <label for="vision-clarity">Clarity & Communication of Vision</label>
                 <div class="input-area">
-                    <textarea id="vision-clarity" rows="4" placeholder="How clearly is the vision communicated...?">Vision is frequently cited in all-hands meetings and external comms. Employee survey indicates 80% clarity score.</textarea>
+                    <textarea id="vision-clarity" rows="4" placeholder="How clearly is the vision communicated...?">The vision is consistently referenced... 75% understanding rate...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
             </div>
@@ -48,18 +47,18 @@ const contentDB = {
              <div class="assessment-item">
                 <label for="mission-statement">Company's Core Mission</label>
                 <div class="input-area">
-                    <textarea id="mission-statement" rows="5" placeholder="What is the company's core purpose...?">Our mission is to provide cities with robust AI governance tools and actionable analytics to improve urban services, ensure data privacy, and foster resident trust.</textarea>
+                    <textarea id="mission-statement" rows="5" placeholder="What is the company's core purpose...?">Our mission is to design, develop, and deploy innovative and affordable services...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
                  <div class="ai-assist-panel">
                     <h4><i class="fas fa-lightbulb"></i> AI Insights & Suggestions</h4>
-                    <p><em>Comparison:</em> Competitor CityZen focuses heavily on "citizen engagement analytics". Is there an opportunity to emphasize governance differentiation more?</p>
+                    <p><em>Comparison:</em> Competitor X emphasizes "data-driven optimization". Is this relevant?</p>
                 </div>
             </div>
             <div class="assessment-item">
                 <label for="mission-alignment">Alignment of Mission with Daily Operations</label>
                 <div class="input-area">
-                    <textarea id="mission-alignment" rows="4" placeholder="How well do daily activities align...?">Product development roadmap prioritizes data lineage and bias detection features. Sales team focuses on municipal clients concerned with data ethics.</textarea>
+                    <textarea id="mission-alignment" rows="4" placeholder="How well do daily activities align...?">Product development prioritizes affordability... Market expansion focuses on green cities...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
             </div>
@@ -69,20 +68,20 @@ const contentDB = {
              <div class="assessment-item">
                 <label for="strategy-main">Main Strategic Pillars (3-5 Years)</label>
                 <div class="input-area">
-                    <textarea id="strategy-main" rows="6" placeholder="Outline key strategic pillars...">1. Establish Leadership in AI Governance for Cities. 2. Expand Analytics Suite for Core Urban Services (Transport, Utilities, Safety). 3. Build Strategic Alliances with Cloud Providers & System Integrators. 4. Develop Talent Pool in Ethical AI & Urban Data Science. 5. Achieve SOC 2 Type II & relevant Gov certifications.</textarea>
+                    <textarea id="strategy-main" rows="6" placeholder="Outline key strategic pillars...">1. Technology Leadership... 2. Geographic Expansion... 3. Partnership Ecosystem... 4. Operational Excellence... 5. Enhanced Rider Experience...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
             </div>
              <div class="assessment-item">
                 <label for="strategy-competitive">Competitive Differentiation & Market Positioning</label>
                 <div class="input-area">
-                    <textarea id="strategy-competitive" rows="5" placeholder="How does the strategy differentiate...?">Focus on integrated Governance + Analytics differentiates from pure analytics players. Positioned as the 'Trust Layer' for smart city AI. Emphasis on explainability and regulatory compliance support.</textarea>
+                    <textarea id="strategy-competitive" rows="5" placeholder="How does the strategy differentiate...?">Differentiation via hardware durability and flexible city partnerships... Positioned as premium, reliable operator...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
                  <div class="ai-assist-panel">
                     <h4><i class="fas fa-lightbulb"></i> AI Insights & Suggestions</h4>
-                    <p><em>Market Trend:</em> Increasing demand for edge AI processing in cities. Strategy impact?</p>
-                    <p><em>Risk Identified:</em> Dependence on open-source AI libraries requires robust monitoring. <span class="text-warning">Mitigation needed.</span></p>
+                    <p><em>Market Trend:</em> Growing B2B demand. Strategy impact?</p>
+                    <p><em>Risk Identified:</em> Single battery supplier dependency. <span class="text-warning">Mitigation needed.</span></p>
                 </div>
             </div>
         </div>
@@ -91,14 +90,14 @@ const contentDB = {
              <div class="assessment-item">
                 <label for="future-client-trends">Anticipated Client Needs & Market Trends (Next 5 Years)</label>
                 <div class="input-area">
-                    <textarea id="future-client-trends" rows="5" placeholder="Anticipated shifts...?">1. Cities: Need for cross-departmental data sharing governance, increased citizen data rights demands, integration with IoT platforms. 2. Regulatory: Evolving AI regulations (EU AI Act), data sovereignty laws. 3. Technological: Federated learning, advancements in privacy-preserving techniques.</textarea>
+                    <textarea id="future-client-trends" rows="5" placeholder="Anticipated shifts...?">1. Cities: Data transparency, smart city integration... 2. End-Users: Personalization, varied vehicles... 3. Regulatory: Sidewalk rules, data privacy... 4. Technological: Battery density, autonomous tech...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
             </div>
             <div class="assessment-item">
                 <label for="future-proofing-strategy">Strategies to Adapt & Address Future Needs</label>
                 <div class="input-area">
-                    <textarea id="future-proofing-strategy" rows="5" placeholder="How is the company adapting...?">R&D exploring federated learning integrations. Active participation in AI policy forums. Developing modular architecture for easier adaptation to new regulations. Partnership with privacy tech firms.</textarea>
+                    <textarea id="future-proofing-strategy" rows="5" placeholder="How is the company adapting...?">R&D includes UrbanPulse platform... Exploring modular designs... Active in regulatory discussions... Battery swapping pilot...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
             </div>
@@ -108,19 +107,19 @@ const contentDB = {
             <div class="assessment-item">
                 <label for="innovation-culture">Culture of Innovation & R&D Pipeline</label>
                 <div class="input-area">
-                    <textarea id="innovation-culture" rows="5" placeholder="Describe innovation culture and pipeline...">Dedicated 'AI Ethics & Innovation Lab'. Internal 'GovTech Challenges'. R&D (15% revenue) focuses on bias detection algorithms, synthetic data generation for testing, and automated compliance checks.</textarea>
+                    <textarea id="innovation-culture" rows="5" placeholder="Describe innovation culture and pipeline...">'Innovation Fridays'... Formal R&D process (12% revenue)... Pipeline: Smart helmet, anti-theft, solid-state battery eval, AI demand prediction...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
                  <div class="ai-assist-panel">
                     <h4><i class="fas fa-lightbulb"></i> AI Insights & Suggestions</h4>
-                    <p><em>Patent Analysis:</em> 2 patents granted for differential privacy techniques, 1 pending for AI model validation workflow. <span class="text-success">Strength.</span></p>
-                    <p><em>Employee Survey Snippet:</em> "Need better tools for cross-team collaboration on R&D projects." Score: 3.5/5.</p>
+                    <p><em>Patent Analysis:</em> 3 BMS granted, 2 rebalancing pending. <span class="text-success">Strength.</span> Potential overlap with Competitor Y - legal review needed.</p>
+                    <p><em>Employee Survey Snippet:</em> "More resources needed for blue-sky hardware projects." Score: 3.8/5.</p>
                 </div>
             </div>
              <div class="assessment-item">
                 <label for="innovation-ip">Intellectual Property & Competitive Edge from Innovation</label>
                 <div class="input-area">
-                    <textarea id="innovation-ip" rows="4" placeholder="Status of IP...?">Key IP focuses on proprietary governance frameworks and bias mitigation techniques. Trade secrets cover specific analytics models for urban services. Aiming for continuous innovation lead.</textarea>
+                    <textarea id="innovation-ip" rows="4" placeholder="Status of IP...?">Key patents secure BMS & algorithms... Trade secrets for efficiency... Est. 12-18 month lead...</textarea>
                     <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
                 </div>
             </div>
@@ -140,41 +139,41 @@ const contentDB = {
             <h2><i class="fas fa-seedling p-icon" style="color:var(--p-people-color);"></i>Growth Culture Assessment</h2>
             <div class="assessment-item">
                 <label>Learning & Development Environment</label>
-                <textarea rows="4" placeholder="Describe the company's approach to continuous learning...">Focus on AI ethics, data science, and cloud certifications. Subscription to online learning platforms (Coursera, Pluralsight). Internal mentorship program pairing senior data scientists with junior analysts. L&D budget approx 3% of payroll.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Review 'HR Training Records Q1 2025.xlsx'. Certifications in AWS/Azure/GCP are high, but AI Ethics training completion rate is lower (65%). Suggest targeted campaign.</p></div>
+                <textarea rows="4" placeholder="Describe the company's approach to continuous learning... Formal training? Mentorship? Budget?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Check 'HR Policies.pdf' for L&D budget allocation. Current budget appears to be X% of payroll.</p></div>
             </div>
             <div class="assessment-item">
                 <label>Adaptability & Resilience</label>
-                <textarea rows="4" placeholder="Assess the organization's ability to adapt to change...">Agile methodologies used in product dev foster adaptability. Recent pivot to support new data privacy regulation (X) implemented within one quarter shows resilience. Cross-functional teams used for new module launches.</textarea>
+                <textarea rows="4" placeholder="Assess the organization's ability to adapt to change... How is resilience fostered? Example of recent adaptation?"></textarea>
             </div>
         </div>
          <div class="assessment-section">
             <h2><i class="fas fa-users-cog p-icon" style="color:var(--p-people-color);"></i>Leadership Principles</h2>
             <div class="assessment-item">
                 <label>Leadership Style & Effectiveness</label>
-                <textarea rows="4" placeholder="Analyze the predominant leadership style(s)...">Generally collaborative and expert-driven leadership. Strong technical direction from founders/CTO. Mid-level management empowerment appears varied across teams. Need for stronger strategic communication downwards.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>360-Feedback Summary (Leadership Team): High scores on 'Technical Competence', lower on 'Cross-Departmental Vision Alignment'.</p></div>
+                <textarea rows="4" placeholder="Analyze the predominant leadership style(s)... Effectiveness in setting direction, motivating teams...?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Employee survey comments mention 'approachable leadership' but also 'siloed decision making between Dept A and B'.</p></div>
             </div>
              <div class="assessment-item">
                 <label>Succession Planning & Bench Strength</label>
-                <textarea rows="4" placeholder="Evaluate approach to succession planning for key roles...">Informal succession planning for key technical roles. Limited bench strength identified for Head of Product and Head of Sales roles. High potential program ('Alpha Leaders') recently launched but impact TBD.</textarea>
+                <textarea rows="4" placeholder="Evaluate approach to succession planning for key roles... Bench strength? How are future leaders identified/developed?"></textarea>
             </div>
         </div>
          <div class="assessment-section">
              <h2><i class="fas fa-user-graduate p-icon" style="color:var(--p-people-color);"></i>Talent Development Systems</h2>
              <div class="assessment-item">
                 <label>Talent Acquisition & Onboarding</label>
-                <textarea rows="4" placeholder="Assess effectiveness of hiring and onboarding...">Strong employer brand within AI/GovTech niche attracts talent. Average time-to-hire for data scientists is 60 days. Onboarding process includes technical bootcamps and ethics module. High focus on candidates with prior public sector or regulated industry experience.</textarea>
+                <textarea rows="4" placeholder="Assess effectiveness of hiring and onboarding... Time-to-hire? Quality of hires? Employer brand perception?"></textarea>
              </div>
               <div class="assessment-item">
                 <label>Performance Management & Rewards</label>
-                <textarea rows="4" placeholder="Analyze performance management system...">Quarterly OKR reviews. Performance tied to individual, team, and company goals. Mix of base salary, bonus (based on company/team performance), and stock options. Recognition program for ethical AI contributions.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Glassdoor Reviews Mention: 'Competitive compensation' but 'bonus structure lacks transparency'. <span class="text-warning">Area for improvement.</span></p></div>
+                <textarea rows="4" placeholder="Analyze performance management system... How are high performers identified/rewarded? Fairness perception?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Analysis of 'Compensation Bands.xlsx' suggests potential discrepancy in pay for similar roles across departments. <span class="text-warning">Review needed.</span></p></div>
              </div>
               <div class="assessment-item">
                 <label>Employee Engagement & Retention</label>
-                <textarea rows="4" placeholder="Evaluate engagement levels (e.g., survey results, eNPS) and retention rates...">Recent eNPS score: +45 (Good). Annual engagement survey shows high scores for 'Meaningful Work' and 'Technical Challenge'. Lower scores on 'Career Path Visibility'. Voluntary attrition rate at 12% (slightly above industry avg for tech roles).</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Turnover highest among mid-level data analysts (2-4 years tenure). Need to investigate career progression pathways.</p></div>
+                <textarea rows="4" placeholder="Evaluate engagement levels (e.g., survey results, eNPS) and retention rates... Main drivers of engagement/attrition?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Exit interview summaries highlight 'lack of career growth opportunities' as a key reason for voluntary attrition in engineering dept.</p></div>
              </div>
         </div>
     `,
@@ -192,52 +191,52 @@ const contentDB = {
             <h2><i class="fas fa-server p-icon" style="color:var(--p-product-color);"></i>Technical Foundation Audit</h2>
              <div class="assessment-item">
                 <label>Architecture & Scalability</label>
-                <textarea rows="4" placeholder="Assess core architecture...">Microservices architecture deployed on Kubernetes (AWS EKS). Core governance engine designed for high throughput data processing. Analytics module uses Snowflake. Scalability tested for 100 concurrent city tenants. Potential bottleneck identified in real-time anomaly detection service under peak load.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Review 'Architecture Review Q4 2024.pdf'. Load testing report shows anomaly detection latency increase beyond SLA at 50K events/sec. Optimization required.</p></div>
+                <textarea rows="4" placeholder="Assess core architecture... Monolithic/microservices? Scalability for growth? Bottlenecks?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Code analysis report (placeholder) flags high cyclomatic complexity in Module Z suggesting refactoring need. Tech debt estimated at X story points.</p></div>
             </div>
             <div class="assessment-item">
                 <label>Technology Stack & Modernity</label>
-                <textarea rows="4" placeholder="Evaluate tech stack...">Backend: Python (FastAPI), Go. Frontend: React, TypeScript. Data: PostgreSQL, Snowflake, S3. Infra: AWS, Terraform, Kubernetes. Stack is modern and leverages managed services where appropriate. Minimal legacy dependencies.</textarea>
+                <textarea rows="4" placeholder="Evaluate tech stack (languages, frameworks, DBs, cloud)... Modern? Supported? Legacy dependencies?"></textarea>
             </div>
              <div class="assessment-item">
                 <label>Security Posture (Product-Level)</label>
-                <textarea rows="4" placeholder="Assess product security practices...">OWASP Top 10 addressed in SDLC. SAST/DAST integrated into CI/CD. Annual external penetration tests. Role-based access control (RBAC) implemented. Data encrypted at rest and in transit. Focus on securing AI models against adversarial attacks.</textarea>
-                  <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Last Pen Test ('TargetAlpha_PenTest_2025-01.pdf') identified one medium-severity vulnerability related to input sanitization in API gateway. Remediation confirmed.</p></div>
+                <textarea rows="4" placeholder="Assess product security practices... Secure coding? Vulnerability scanning? Pen testing frequency? Sensitive data handling?"></textarea>
+                  <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Last pen test report ('PenTest_Report_Q4_2024.pdf') identified 2 high, 5 medium vulnerabilities. Remediation status unclear.</p></div>
             </div>
         </div>
         <div class="assessment-section">
              <h2><i class="fas fa-code-branch p-icon" style="color:var(--p-product-color);"></i>Development Methodologies</h2>
              <div class="assessment-item">
                 <label>SDLC Process & Agility</label>
-                <textarea rows="4" placeholder="Describe SDLC...">Agile (Scrum) methodology with 2-week sprints. Jira used for backlog management. Feature flags used for gradual rollouts. Release cadence is monthly for major features, weekly for minor updates/patches.</textarea>
+                <textarea rows="4" placeholder="Describe SDLC... Agile (Scrum/Kanban)? Waterfall? Hybrid? Effectiveness? Release cadence?"></textarea>
              </div>
              <div class="assessment-item">
                 <label>Code Quality & Testing Practices</label>
-                <textarea rows="4" placeholder="Evaluate code reviews, automated testing...">Mandatory code reviews via GitHub pull requests. Automated testing includes unit tests (Pytest, Jest - avg 80% coverage), integration tests, and E2E tests (Cypress). CI/CD pipeline runs full test suite on every commit to main branches.</textarea>
-                  <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>SonarQube analysis shows 'A' rating for maintainability and reliability. Code duplication below 5%. <span class="text-success">Strength.</span></p></div>
+                <textarea rows="4" placeholder="Evaluate code reviews, automated testing (unit, integration, E2E), test coverage, CI/CD pipeline maturity."></textarea>
+                  <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Check DevOps tool logs for build success rates (avg 92%) and test coverage reports (avg 65% unit test coverage).</p></div>
             </div>
         </div>
         <div class="assessment-section">
             <h2><i class="fas fa-clipboard-check p-icon" style="color:var(--p-product-color);"></i>Quality Assurance Processes</h2>
              <div class="assessment-item">
                 <label>QA Team Structure & Process</label>
-                <textarea rows="4" placeholder="Describe QA team role, structure...">Dedicated QA team embedded within Scrum teams. Focus on exploratory testing, test automation development, and release sign-off. Use TestRail for test case management.</textarea>
+                <textarea rows="4" placeholder="Describe QA team role, structure (embedded/separate)... Manual vs. automated focus? Test plan creation/execution?"></textarea>
             </div>
              <div class="assessment-item">
                 <label>Bug Tracking & Resolution</label>
-                <textarea rows="4" placeholder="Analyze bug tracking/prioritization/resolution process...">Jira used for bug tracking. Bugs prioritized based on severity/impact (P0-P4). SLA for P0/P1 bug resolution is 24/72 hours. Weekly bug triage meetings.</textarea>
+                <textarea rows="4" placeholder="Analyze bug tracking/prioritization/resolution process... Tools? Avg time-to-resolution for critical bugs?"></textarea>
             </div>
         </div>
          <div class="assessment-section">
             <h2><i class="fas fa-lightbulb p-icon" style="color:var(--p-product-color);"></i>Intellectual Property (IP)</h2>
              <div class="assessment-item">
                 <label>Patents, Trademarks, Trade Secrets</label>
-                <textarea rows="4" placeholder="Inventory key IP assets...">(Referencing Project assessment) Patents cover specific algorithms for bias detection and data minimization. Trademark 'Target Alpha' registered. Core governance workflows maintained as trade secrets.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Freedom-to-operate search recommended for planned expansion into healthcare data analytics.</p></div>
+                <textarea rows="4" placeholder="Inventory key IP assets... Strength/defensibility? (Referencing Project page IP assessment)"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Cross-reference patent list with competitor filings - potential overlap identified in Area X. Freedom-to-operate analysis recommended.</p></div>
             </div>
              <div class="assessment-item">
                 <label>Open Source Software (OSS) Usage & Compliance</label>
-                <textarea rows="4" placeholder="Assess policies and practices for using OSS components.">Clear policy on approved OSS licenses (MIT, Apache 2.0, BSD preferred). Use FOSSA for automated license scanning and vulnerability detection in dependencies. Regular audits performed.</textarea>
+                <textarea rows="4" placeholder="Assess policies and practices for using OSS components. Are licenses tracked? Any compliance risks (e.g., GPL copyleft issues)?"></textarea>
             </div>
         </div>
     `,
@@ -255,47 +254,47 @@ const contentDB = {
             <h2><i class="fas fa-leaf p-icon" style="color:var(--p-processes-color);"></i>Operational Leanness</h2>
              <div class="assessment-item">
                 <label>Core Process Efficiency (Value Stream Mapping)</label>
-                <textarea rows="4" placeholder="Analyze key operational processes...">Customer onboarding process mapped - avg time 5 days, potential automation identified in initial data validation step. Data processing pipeline efficiency monitored via Grafana dashboards. Support ticket resolution process (Zendesk) avg time 8 hours for high priority.</textarea>
+                <textarea rows="4" placeholder="Analyze key operational processes (e.g., order-to-cash, support ticket resolution, fleet deployment)... Identify bottlenecks, waste (wait times, rework, handoffs), and opportunities using Lean/VSM principles."></textarea>
              </div>
               <div class="assessment-item">
                 <label>Cross-Functional Collaboration & Handoffs</label>
-                <textarea rows="4" placeholder="Evaluate how effectively different departments collaborate...">Sales-to-Onboarding handoff managed via Salesforce/Slack integration. Product-Support collaboration via shared Jira project for bug reporting/feature requests. Occasional friction reported between Data Science and Platform Engineering regarding resource prioritization.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Interview stakeholders involved in Data Science/Platform Eng handoffs to identify specific process improvement opportunities.</p></div>
+                <textarea rows="4" placeholder="Evaluate how effectively different departments (e.g., Sales-Ops, Product-Support) collaborate on key processes... Are handoffs smooth, documented, and measured?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Review process maps (if available). Consider workshop or interviews focused on major cross-functional process handoffs.</p></div>
             </div>
         </div>
          <div class="assessment-section">
             <h2><i class="fas fa-robot p-icon" style="color:var(--p-processes-color);"></i>AI & Automation Adoption</h2>
             <div class="assessment-item">
                 <label>Current Use of Automation/AI in Core Processes</label>
-                <textarea rows="4" placeholder="Inventory existing automation tools and AI applications...">CI/CD pipeline fully automated (Jenkins/ArgoCD). Automated infrastructure provisioning (Terraform). AI used internally for code completion assistance (Copilot), log anomaly detection (Datadog AI), and customer support ticket categorization (Zendesk AI).</textarea>
+                <textarea rows="4" placeholder="Inventory existing automation tools (RPA, scripts) and AI applications (chatbots, predictive analytics)... Assess effectiveness, ROI, and maintenance overhead."></textarea>
             </div>
              <div class="assessment-item">
                 <label>Potential for Further Automation/AI (Impact/Feasibility)</label>
-                <textarea rows="4" placeholder="Identify high-potential areas for introducing/expanding automation & AI...">High potential for automating initial data quality checks during customer onboarding (Impact: High, Feasibility: Medium). Potential for AI-driven predictive resource scaling for processing pipeline (Impact: Medium, Feasibility: High). Using AI to generate draft compliance reports (Impact: Medium, Feasibility: Medium).</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Analysis of support tickets shows 30% relate to common configuration questions - potential for AI chatbot/knowledge base automation.</p></div>
+                <textarea rows="4" placeholder="Identify high-potential areas for introducing/expanding automation & AI... Prioritize based on potential impact (cost, speed, quality) and feasibility."></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Process mining analysis (placeholder) suggests high manual effort & variability in invoice processing (avg 3 days cycle time). High potential candidate for RPA/AI document processing.</p></div>
             </div>
         </div>
         <div class="assessment-section">
             <h2><i class="fas fa-chart-pie p-icon" style="color:var(--p-processes-color);"></i>Resource Allocation</h2>
             <div class="assessment-item">
                 <label>Alignment of Resources (Financial, Human) with Strategy</label>
-                <textarea rows="4" placeholder="Assess how financial and human resources are allocated...">R&D budget (~15% of revenue) aligns with tech leadership strategy. Sales resources focused on Tier 1 city targets. Significant investment in cloud infrastructure supports analytics suite expansion. Headcount growth planned for AI Governance SME roles.</textarea>
+                <textarea rows="4" placeholder="Assess how financial and human resources are allocated across departments, projects, strategic initiatives... Does allocation align with stated strategic priorities (from Project P)? Evidence of resource shifting towards priorities?"></textarea>
             </div>
              <div class="assessment-item">
                 <label>Budgeting, Planning & Forecasting Process Agility</label>
-                <textarea rows="4" placeholder="Evaluate the budgeting/planning process...">Annual budgeting process with quarterly rolling forecasts. Use Adaptive Planning. Resource trade-offs for new initiatives discussed in monthly strategy review meetings. Process allows for some flexibility to pivot based on market changes.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Compare budget allocation vs. strategic pillar importance. Ensure sufficient funding for compliance/certification initiatives (Posture P).</p></div>
+                <textarea rows="4" placeholder="Evaluate the budgeting/planning process... Is it agile? How frequently are forecasts updated? How are resource trade-offs made when priorities shift?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Compare initial budgets vs. actual spend for strategic initiatives over last 2 years.</p></div>
             </div>
         </div>
         <div class="assessment-section">
              <h2><i class="fas fa-book-reader p-icon" style="color:var(--p-processes-color);"></i>Organizational Learning Capabilities</h2>
             <div class="assessment-item">
                 <label>Knowledge Management & Sharing Practices</label>
-                <textarea rows="4" placeholder="Assess how institutional knowledge is captured, stored, accessed, and shared...">Confluence used as internal wiki for technical documentation, process guides, and research findings. Regular tech talks and 'lunch & learn' sessions. Knowledge sharing culture encouraged, but documentation consistency varies across teams.</textarea>
+                <textarea rows="4" placeholder="Assess how institutional knowledge is captured, stored, accessed, and shared... Effectiveness of tools (wikis, etc.)? Culture of sharing vs. hoarding?"></textarea>
             </div>
              <div class="assessment-item">
                 <label>Feedback Loops & Continuous Improvement Culture</label>
-                <textarea rows="4" placeholder="Evaluate mechanisms for collecting feedback and incorporating it...">Regular customer feedback surveys (CSAT/NPS) and user interviews conducted by Product team. Sprint retrospectives used by dev teams. Post-mortems conducted for major incidents/outages. Findings feed into backlog refinement and process adjustments. Evidence of iterative improvement on core platform modules.</textarea>
+                <textarea rows="4" placeholder="Evaluate mechanisms for collecting feedback (customer, employee, operational)... How is it analyzed and incorporated into process improvements or strategic adjustments? Is there evidence of a continuous improvement mindset (e.g., post-mortems, Kaizen events)?"></textarea>
             </div>
         </div>
     `,
@@ -313,54 +312,54 @@ const contentDB = {
              <h2><i class="fas fa-tachometer-alt p-icon" style="color:var(--p-performance-color);"></i>KPI/OKR Frameworks</h2>
               <div class="assessment-item">
                 <label>Goal Setting Framework & Alignment Cascade</label>
-                <textarea rows="4" placeholder="Does the company use OKRs, Balanced Scorecard, other?">Company-wide OKRs set annually, cascaded quarterly to departments and teams. Use Lattice for OKR tracking and visibility. Alignment seems generally good, though linkage between team KRs and company Os could be clearer in some cases.</textarea>
+                <textarea rows="4" placeholder="Does the company use OKRs, Balanced Scorecard, other? How effectively are high-level goals cascaded down to teams/individuals? Is alignment visible?"></textarea>
              </div>
               <div class="assessment-item">
                 <label>Key Performance Indicators (KPIs) - Financial & Operational</label>
-                <textarea rows="4" placeholder="Identify key financial KPIs and operational KPIs...">Financial: ARR Growth, Net Revenue Retention (NRR), Gross Margin, CAC Payback Period, Rule of 40. Operational: Platform Uptime, Avg Data Processing Latency, Customer Support CSAT, Model Accuracy/Fairness Metrics (e.g., F1 score, disparate impact ratio), # of Governance Policies Managed.</textarea>
-                <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>KPI Dashboard (Tableau link placeholder) shows strong ARR Growth (40% YoY) and NRR (115%). Platform uptime consistently >99.95%. CAC Payback Period is 18 months, requires monitoring.</p></div>
+                <textarea rows="4" placeholder="Identify key financial KPIs (Rev Growth, EBITDA Margin, CAC, LTV, Burn Rate...) and operational KPIs (Uptime, CSAT, Feature Adoption, Cycle Time...). Are they relevant, tracked consistently, visualized effectively (dashboards)?"></textarea>
+                <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Analysis of 'Board Deck Q1.pptx' shows focus on Revenue Growth & User Count. Suggest adding operational efficiency KPIs (e.g., cost per ride, vehicle utilization) for a balanced view.</p></div>
              </div>
         </div>
          <div class="assessment-section">
              <h2><i class="fas fa-hand-holding-usd p-icon" style="color:var(--p-performance-color);"></i>Financial Discipline & Performance</h2>
              <div class="assessment-item">
                 <label>Historical Financial Performance Analysis (3-5 Years)</label>
-                <textarea rows="4" placeholder="Analyze trends in Revenue, Gross Margin, EBITDA, Net Income, Cash Flow...">Consistent ARR growth (~35-45% YoY). Gross Margin stable at ~75%. Negative EBITDA but improving trend towards breakeven. Operating Cash Flow negative due to R&D/Sales investments. Strong performance vs. initial budgets.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Upload 'Financials_2022_2024.xlsx'. AI analysis confirms trends, highlights increasing R&D spend as % of revenue. Benchmarking vs SaaS Rule of 40 shows performance slightly below top quartile but improving.</p></div>
+                <textarea rows="4" placeholder="Analyze trends in Revenue, Gross Margin, EBITDA, Net Income, Cash Flow... Compare against budget, forecasts, and industry benchmarks. Key drivers/detractors?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Upload historical financial statements (.xlsx, .csv) for automated trend analysis, ratio calculation, and benchmarking (if industry data available).</p></div>
             </div>
              <div class="assessment-item">
                 <label>Working Capital Management</label>
-                <textarea rows="4" placeholder="Evaluate management of receivables (DSO), payables (DPO), and inventory.">Primarily SaaS model, minimal inventory. DSO stable around 60 days (typical for municipal contracts). DPO managed actively (~45 days). Cash conversion cycle consistent and well-managed.</textarea>
+                <textarea rows="4" placeholder="Evaluate management of receivables (DSO), payables (DPO), and inventory (if applicable). Assess cash conversion cycle efficiency."></textarea>
             </div>
              <div class="assessment-item">
                 <label>Unit Economics & Cohort Analysis</label>
-                <textarea rows="4" placeholder="Analyze CAC, LTV, contribution margin per user/unit...">CAC ~$150K per city contract. LTV estimated >$1M based on high NRR and long contract potential. LTV/CAC ratio > 6x. Healthy unit economics. Cohort analysis shows increasing contract value over time for earlier cohorts.</textarea>
+                <textarea rows="4" placeholder="Analyze CAC, LTV, contribution margin per user/unit... Assess profitability by customer cohort, product line, or geography. Payback period analysis."></textarea>
             </div>
               <div class="assessment-item">
                 <label>Capital Structure & Funding History</label>
-                <textarea rows="4" placeholder="Review current capital structure & funding history...">Series C company. Total funding $80M. Key investors: GovTech Ventures, Urban Future Fund, CloudProvider Ventures. Minimal debt ($5M venture debt line). Clean cap table. Estimated cash runway ~18 months at current burn rate.</textarea>
+                <textarea rows="4" placeholder="Review current capital structure (debt, equity). Analyze past funding rounds, valuations, and key investors. Assess future funding needs."></textarea>
             </div>
         </div>
         <div class="assessment-section">
             <h2><i class="fas fa-brain p-icon" style="color:var(--p-performance-color);"></i>AI-Enabled Execution & Data Usage</h2> <div class="assessment-item">
                 <label>Use of Data/AI in Decision Making & Operations</label>
-                <textarea rows="4" placeholder="Assess current use of data analytics & AI to inform decisions...">Extensive use of product analytics (Mixpanel) to guide feature dev. AI used in sales forecasting (Salesforce Einstein). Customer churn prediction model used by CS team. A/B testing framework used for UI/UX improvements. Data-driven culture is strong, especially in Product/Eng.</textarea>
+                <textarea rows="4" placeholder="Assess current use of data analytics & AI to inform decisions (pricing, churn prediction, fleet allocation...) and optimize operations (predictive maintenance, fraud detection...). Examples? Impact?"></textarea>
             </div>
              <div class="assessment-item">
                 <label>Data Infrastructure, Quality & Analytics Capabilities</label>
-                <textarea rows="4" placeholder="Evaluate data infrastructure, quality & capabilities...">Centralized data warehouse (Snowflake). Data ingestion pipelines from various sources (product DBs, CRM, support). dbt used for transformations. Data quality monitored via Great Expectations. Analytics team uses Tableau for BI. Growing internal data science capability.</textarea>
-                <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Assess data governance maturity for internal data usage - are the same principles applied internally as offered to clients? Gap analysis recommended.</p></div>
+                <textarea rows="4" placeholder="Evaluate data infrastructure (warehouse, lake), data quality processes, and in-house analytics capabilities (tools like Tableau/PowerBI, data science talent). Accessibility of data for decision-makers?"></textarea>
+                <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Identify key data sources required for proposed synergy KPIs. Assess availability and quality.</p></div>
             </div>
         </div>
         <div class="assessment-section">
             <h2><i class="fas fa-network-wired p-icon" style="color:var(--p-performance-color);"></i>Ecosystem Leverage</h2>
             <div class="assessment-item">
                 <label>Strategic Partnership Value & Management</label>
-                <textarea rows="4" placeholder="Analyze existing strategic partnerships...">Key partnerships with AWS, Azure, Google Cloud (co-selling, marketplace listings). Integration partnerships with major smart city platform providers (e.g., Cisco Kinetic, Siemens MindSphere). Dedicated partnership team manages relationships and tracks joint KPIs.</textarea>
+                <textarea rows="4" placeholder="Analyze existing strategic partnerships... Contribution to revenue, innovation, market access? How are partnerships managed and measured?"></textarea>
             </div>
             <div class="assessment-item">
                 <label>Market Position, Brand Strength & Network Effects</label>
-                <textarea rows="4" placeholder="Evaluate market position, brand strength & network effects...">Recognized leader in AI Governance for Smart Cities niche (Gartner MQ mention - placeholder). Strong brand reputation for ethics and reliability. Potential network effects exist as more cities adopt, creating standards and attracting more integrators.</textarea>
+                <textarea rows="4" placeholder="Evaluate position within its market ecosystem... Market share trends? Brand reputation/sentiment? Evidence of network effects? Influence in the industry?"></textarea>
             </div>
         </div>
     `,
@@ -378,51 +377,50 @@ const contentDB = {
             <h2><i class="fas fa-balance-scale p-icon" style="color:var(--p-posture-color);"></i>Compliance Architecture</h2>
              <div class="assessment-item">
                 <label>Regulatory Compliance Framework (Identify Key Regs)</label>
-                <textarea rows="4" placeholder="Identify key regulations and assess compliance...">Key Regs: GDPR, CCPA, relevant state-level privacy laws, aiming for NIST AI RMF alignment, FedRAMP (future goal). Dedicated Compliance Officer. Policies documented for data handling, privacy, security. Regular employee training. SOC 2 Type I achieved, Type II in progress.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Scan 'SOC 2 Gap Analysis.pdf'. Key control gap identified in vendor risk management process. Remediation plan required for Type II audit.</p></div>
+                <textarea rows="4" placeholder="Identify key regulations (GDPR, CCPA, Data Localization, Safety Standards...). Assess policies, procedures, controls, training programs for compliance. Review past violations/audits. Data privacy practices?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Suggestion</h4><p>Scan 'Compliance Manual.pdf' and 'Data Privacy Policy.docx' for GDPR readiness checklist completion and policy adherence statements.</p></div>
             </div>
              <div class="assessment-item">
                 <label>Contractual Compliance Management</label>
-                <textarea rows="4" placeholder="Evaluate processes for managing contractual compliance...">Use Ironclad for contract lifecycle management. Standard templates include robust data processing agreements (DPAs). Process exists for reviewing non-standard terms. Monitoring SLAs via platform metrics dashboards.</textarea>
+                <textarea rows="4" placeholder="Evaluate processes for managing and ensuring compliance with key customer (SLAs, data use), supplier (quality, payment), and partner contracts. Is there a contract management system?"></textarea>
             </div>
         </div>
         <div class="assessment-section">
             <h2><i class="fas fa-exclamation-triangle p-icon" style="color:var(--p-posture-color);"></i>Risk Management Framework</h2>
              <div class="assessment-item">
                 <label>Risk Identification, Assessment & Prioritization Process</label>
-                <textarea rows="4" placeholder="Formal process for identifying, assessing risks?">Formal quarterly risk assessment process involving department heads, facilitated by Compliance Officer. Risks assessed on likelihood/impact matrix. Top risks reviewed by leadership team. Use LogicGate for GRC tracking.</textarea>
+                <textarea rows="4" placeholder="Formal process for identifying, assessing (likelihood, impact), and prioritizing key business risks (strategic, operational, financial, compliance, cyber, ESG)? Is there a risk committee?"></textarea>
             </div>
             <div class="assessment-item">
                 <label>Risk Mitigation Strategies & Internal Controls</label>
-                <textarea rows="4" placeholder="Evaluate effectiveness of mitigation strategies and controls...">Key Risks: AI model bias, data breach, regulatory changes, cloud provider outage. Mitigations: Robust model validation/testing, security controls (see Product P), BCP/DR plan, regulatory monitoring, multi-cloud strategy exploration. Internal controls tested periodically.</textarea>
-                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Review 'Risk Register Q1 2025.xlsx'. Mitigation plan for 'Regulatory Changes' risk appears underdeveloped. Requires specific actions and owners.</p></div>
+                <textarea rows="4" placeholder="Evaluate effectiveness of existing mitigation strategies and internal controls for top risks. Is there a documented risk register? How often is it updated/reviewed? Control testing?"></textarea>
+                 <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>Review 'Internal Audit Report Q4 2024' for findings related to control weaknesses. Finding X related to user data access controls needs follow-up.</p></div>
             </div>
             <div class="assessment-item">
                 <label>Business Continuity & Disaster Recovery (BCP/DR)</label>
-                <textarea rows="4" placeholder="Assess BCP/DR plans' comprehensiveness...">Documented BCP/DR plan covering core platform services. Leverages AWS multi-AZ deployment. Backups stored immutably in separate region. Annual DR test performed (last test successful - RTO 4 hours, RPO 1 hour). Plan covers key personnel unavailability.</textarea>
+                <textarea rows="4" placeholder="Assess BCP/DR plans' comprehensiveness for critical operations (tech, supply chain, personnel). Have plans been tested recently? RTO/RPO targets defined and achievable?"></textarea>
             </div>
              <div class="assessment-item">
                 <label>Cybersecurity Posture & Incident Response</label>
-                <textarea rows="4" placeholder="Evaluate overall cybersecurity posture & incident response...">Managed SIEM (Splunk), EDR solution, regular vulnerability scanning (Nessus). Security awareness training mandatory. Incident Response plan documented and tested via tabletop exercises annually. No major breaches reported.</textarea>
+                <textarea rows="4" placeholder="Evaluate overall cybersecurity posture (tools, policies, training). Assess incident response plan's readiness and effectiveness. History of breaches?"></textarea>
             </div>
         </div>
          <div class="assessment-section">
             <h2><i class="fas fa-gavel p-icon" style="color:var(--p-posture-color);"></i>Audit & Accountability Processes</h2>
              <div class="assessment-item">
                 <label>Internal & External Audit Functions</label>
-                <textarea rows="4" placeholder="Describe scope, frequency, independence, and effectiveness of audits...">No formal internal audit function yet. Relies on external audits (SOC 2, Pen Tests). External financial audit performed annually (Big 4 firm - placeholder). Audit findings tracked by Compliance Officer and reported to leadership/board.</textarea>
+                <textarea rows="4" placeholder="Describe scope, frequency, independence, and effectiveness of internal/external audits. How are findings tracked/remediated? Relationship with audit committee?"></textarea>
             </div>
             <div class="assessment-item">
                 <label>Governance Structure & Board Oversight Effectiveness</label>
-                <textarea rows="4" placeholder="Evaluate governance structure and board effectiveness...">Board comprises founders, key investors (2), and 1 independent director. Committees: Audit & Risk, Compensation. Board meets quarterly, reviews strategy, financials, key risks. Effectiveness appears adequate for current stage, may need more independent directors post-acquisition.</textarea>
+                <textarea rows="4" placeholder="Evaluate governance structure (board composition, independence, committees, charters). How effectively does the board provide oversight on strategy, risk, compliance, and executive performance?"></textarea>
             </div>
              <div class="assessment-item">
                 <label>Ethical Culture, Code of Conduct & Whistleblower Mechanisms</label>
-                <textarea rows="4" placeholder="Assess ethical culture, code of conduct, whistleblower mechanisms...">Code of Conduct covers AI ethics principles, data privacy, anti-corruption. Annual ethics training. Confidential whistleblower hotline managed by third party (NAVEX Global - placeholder). Reports investigated by Compliance/Legal. Culture emphasizes 'responsible AI' principles.</textarea>
+                <textarea rows="4" placeholder="Assess code of conduct policies and ethics training. Are there effective, confidential mechanisms for reporting concerns? How are reports handled? Evidence of ethical culture reinforcement?"></textarea>
             </div>
         </div>
     `,
-    // Keep other templates (roadmap, documents, etc.) as they were
     'roadmap-content': `
         <div class="content-header">
             <h1 id="roadmap-content-deal-name">Transformation Roadmap</h1>
