@@ -144,6 +144,11 @@ const contentDB = {
             </div>
             <div class="assessment-item">
                 <label>Adaptability & Resilience</label>
+                <div class="input-area">
+                    <textarea id="vision-statement" rows="5" placeholder="Describe the company's long-term vision...">To be the leading platform for trustworthy AI-driven insights, enabling smarter, more efficient, and equitable city governance globally.</textarea>
+                    <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
+                </div>
+
                 <textarea rows="4" placeholder="Assess the organization's ability to adapt to change...">Agile methodologies used in product dev foster adaptability. Recent pivot to support new data privacy regulation (X) implemented within one quarter shows resilience. Cross-functional teams used for new module launches.</textarea>
             </div>
         </div>
@@ -151,6 +156,11 @@ const contentDB = {
             <h2><i class="fas fa-users-cog p-icon" style="color:var(--p-people-color);"></i>Leadership Principles</h2>
             <div class="assessment-item">
                 <label>Leadership Style & Effectiveness</label>
+                <div class="input-area">
+                    <textarea id="vision-statement" rows="5" placeholder="Describe the company's long-term vision...">To be the leading platform for trustworthy AI-driven insights, enabling smarter, more efficient, and equitable city governance globally.</textarea>
+                    <button class="comment-btn-inline" title="Comments"><i class="fas fa-comment-dots"></i></button>
+                </div>
+
                 <textarea rows="4" placeholder="Analyze the predominant leadership style(s)...">Generally collaborative and expert-driven leadership. Strong technical direction from founders/CTO. Mid-level management empowerment appears varied across teams. Need for stronger strategic communication downwards.</textarea>
                  <div class="ai-assist-panel"><h4><i class="fas fa-lightbulb"></i> AI Insight</h4><p>360-Feedback Summary (Leadership Team): High scores on 'Technical Competence', lower on 'Cross-Departmental Vision Alignment'.</p></div>
             </div>
